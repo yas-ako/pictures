@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乱数</title>
+</head>
+
+<body>
+    <div>
+        <textarea id="number" style="text-align: center">
+        </textarea>
+    </div>
+    <style>
+
+    </style>
+    <script>
+        window.onload = function Random() {
+            let random = Math.random() * (368 - 364) + 364;
+            console.log(random);
+            random = Math.floor(random)/10;
+            document.getElementById("number").innerText = random;
+        }
+    </script>
+</body>
+
+</html>
